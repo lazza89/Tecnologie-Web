@@ -7,7 +7,7 @@ da uno screen reader), ipovedenti e daltonici. Oltre all'accessibilità il
 progetto richiedeva un'area login-registrati e un database per il
 salvataggio dei dati utente e recensioni.
 
-# ScreenShots
+# Screenshots
 ![Alt text](/screenshots/Screenshot_1.png)
 ![Alt text](/screenshots/Screenshot_2.png)
 ![Alt text](/screenshots/Screenshot_3.png)
