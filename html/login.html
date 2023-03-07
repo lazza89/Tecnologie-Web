@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Login - Crystal Ski</title>
+	<meta name="keywords" content="Login, Area riservata, Crystal Ski, monte Cristallo" />
+	<meta name="description" content="Login dell'utente, con la possibilità di scrivere una nuova recensione." />
+	<meta name="author" content="Crystal Ski" />
+	<link rel="stylesheet" href="../css/style.css" />
+	<link rel="stylesheet" media="screen and (max-width:600px), only screen and (max-width:600px)" href="../css/mini.css"/>
+	<link rel="shortcut icon" href="../images/icona.png" />
+	<link rel="stylesheet" media="print" href="../css/print.css"/>
+
+	<script src="../javascript/script.js"></script>
+
+</head>
+
+<body>
+	<header>
+		<a class="visually-hidden" href="#main">Vai al contenuto</a>
+		<h1 lang="en">Crystal Ski</h1>
+	</header>
+
+	<div id="breadcrumb">
+		<p>Ti trovi in: <a href="home.php" lang="en">Home</a> &gt; &gt; Login</p>
+	</div>
+
+	<input type="checkbox" id="menu-hamburger" class="menu-toggle" />
+	<label for="menu-hamburger" class="hamburger"><span class="visually-hidden">menu</span></label>
+	<nav id="menu">
+		<ul>
+			<li><a href="home.php">Home</a></li>
+			<li><a href="tariffe.php">Tariffe</a></li>
+			<li><a href="mappa.php">Mappa</a></li>			
+			<li><a href="servizi.php">Servizi</a></li>
+			<li><a href="eventi.php">Eventi e Gare</a></li>
+			<li><a href="recensioni.php">Recensioni</a></li>
+		</ul>
+	</nav>
+	
+	<main id="main">
+		<div class="login">
+			<div id="loginBox">
+
+				{{errorMSG}}
+			
+				<form action="login.php" id="loginForm" method="post">
+					<p class="JSError" id="loginUsernameERR"></p>
+					<label for="LUsername"><b>Username</b></label>
+					<input type="text" placeholder="Username" name="LUsername" id="LUsername" required>
+					
+					<p class="JSError" id="loginPasswordERR"></p>
+					<label for="LPassword"><b>Password</b></label>
+					<input type="password" placeholder="Password" name="LPassword" id="LPassword" required>
+				
+					<div id=loginAndRegister>
+						<button type="submit" name="submit" class="loginbtn">Login</button>
+						<a href="registrati.php">Registrati!</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</main>
+    {{footer}}		
+</body>
+</html>
+

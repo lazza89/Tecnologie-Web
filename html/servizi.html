@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Servizi - Crystal Ski</title>
+	<meta name="keywords" content="Noleggio, Scuola sci, Camposcuola, punti ristoro, 360Gradi, Bar panini, Crystal Ski" />
+	<meta name="description" content="Punti ristoro con deliziosi piatti nostrani, una buona pizza o panini che non possono mai mancare. Ampia scelta dell'attrezzatura di buona qualità e i migliori maestri adatti anche ai principianti" />
+	<meta name="author" content="Crystal Ski" />
+	<link rel="stylesheet" href="../css/style.css" />
+	<link rel="stylesheet" media="screen and (max-width:600px), only screen and (max-width:600px)" href="../css/mini.css"/>
+    <link rel="shortcut icon" href="../images/icona.png" />
+    <link rel="stylesheet" media="print" href="../css/print.css"/>
+</head>
+
+<body>
+    <header>
+		<a class="visually-hidden" href="#main">Vai al contenuto</a>
+		<h1 lang="en">Crystal Ski</h1>
+	</header>
+
+	<div id="breadcrumb">
+        <p>{{logged}}Ti trovi in: <a href="home.php" lang="en">Home</a> &gt; &gt; Servizi</p>
+        <a class="areaRiservata" href="{{loginPage}}">{{login}}</a>
+    </div>
+
+    <input type="checkbox" id="menu-hamburger" class="menu-toggle" />
+	<label for="menu-hamburger" class="hamburger"><span class="visually-hidden">menu</span></label>
+	<nav id="menu">
+		<ul>
+			<li lang="en"><a href="home.php">Home</a></li>
+            <li><a href="tariffe.php">Tariffe</a></li>
+            <li><a href="mappa.php">Mappa</a></li>         
+            <li>Servizi</li>
+            <li><a href="eventi.php">Eventi e Gare</a></li>
+            <li><a href="recensioni.php">Recensioni</a></li>
+			{{areaPersonale}}
+		</ul>
+	</nav>      
+
+    <main id="main">
+        <h2 class="titolo"> Le nostre baite </h2>
+        <article class="box">  
+            <h3> 360 Gradi </h3>
+            <p> Pranzare mentre si ammira un panorama mozzafiato? 
+            E' possibile in cima al Monte Cristallo, in prossimità dell'impianto di risalita, grazie alla nostra terrazza dotata di pannelli di vetro che vi assicura un'ottima sosta per recuperare le forze e per rimanere al caldo.</p> 
+            <p>Il posto offre una tavola calda con ampia scelta di primi e secondi piatti originali del posto, tra una portata e l'altra potrete godervi la splendida vista dei monti innevati.</p>
+            <p>Numero di telefono 3330000001</p>
+        </article>
+        <article class="box">  
+            <h3> Rifugio "Camposcuola" </h3>
+            <p> Nell'area più frequentata delle nostre piste, si trova il rifugio Camposcuola che offre un buon menù adatto a tutti.</p> 
+            <p>Durante la settimana è disponibile un menù fisso a 15€ (primo + secondo) e uno a 10€ (solo primo o solo secondo); ricordiamo che in entrambi sono incluse le bevande.</p><p>Da quest'anno, ci sarà qualcosa di nuovo: una piccola parte sarà dedicata alla pizzeria, la quale prevede anche un menù fisso a 12€ per pizza farcita e bibita.</p>
+            <p>Numero di telefono: 3330000002</p>
+        </article>
+        <article class="box">  
+            <h3> Bar <span lang="en">"Fast & go"</span> </h3>
+            <p> Per gli amanti di panini e birra, ai piedi delle piste 1 e 5, si trova questo bar che sicuramente soddisferà le vostre richieste: velocità nel servizio, ottima qualità e prezzo economico: calza a pennello per chi ha voglia di mangiare qualcosa al volo senza perdere troppo tempo.</p>
+            <p>Il menù varia dai panini classici con l’affettato (soppressa veneta, speck, prosciutto crudo e cotto e salame) ai più particolare e sfiziosi con cotoletta, <span lang="en"> wurstel, hamburger </span> e doppio strato <span lang="en"> hamburger </span> con formaggio caldo e filante. Ovviamente non possono mancare <span lang="en"> ketchup </span>, maionese e salsa <span lang="en"> barbecue</span>.</p> 
+            <p>Sei indeciso su che bibita abbinare al panino? Abbiamo a disposizione più di 10 birre diverse oltre alle classiche bibite, scegli la tua preferita!</p>
+            <p>Numero di telefono: 3330000003</p>
+        </article>
+
+        <h2 class="titolo"> Noleggio convenzionato </h2>
+        <div class="content" id="noleggio">
+            <img id="imgNoleggio" src="../images/noleggio.jpg" alt="Ampia scelta di sci tra varie marche: Rossignol, Head, Volkl, Nordica."/>
+            <p>Il noleggio "Ski-Center" si trova vicino al parcheggio e alla biglietteria ai piedi della cabinovia C che porta in cima al monte Cristallo.</p><p>La struttura offre un’ampia gamma di sci, <span lang="en">snowboard, </span>scarponi, racchette da neve, caschi e altri tipi di attrezzatura/protezioni che vi permetteranno di trascorrere in tutta sicurezza delle giornate stupende sulle piste.</p><p>Oltre al servizio di noleggio si può trovare un assortimento ricco di accessori sia per lo sci che per lo <span lang="en"> snowboard, </span> un servizio per la manutenzione dei vostri sci/tavole (affilatura lamine e sciolinatura) e un comodo deposito dotato di armadietti, con serratura elettronica a codice, nei quali si potranno riporre effetti personali. Gli armadietti sono custoditi dal personale del noleggio.</p><p>Numero di telefono: 3330000004</p>
+        </div>
+
+        <h2 class="titolo"> Scuola di Sci</h2>
+        <div class="content" id="scuola">
+            <img id="imgMaestri" src="../images/maestri_sci.jpg" alt=""/>
+            <p> Se vuoi metterti in gioco e imparare a sciare oppure vuoi solo migliorare, tenta con noi!</p>
+            <p>Abbiamo a disposizione più di 10 maestri, ognuno qualificato per seguire il tuo percorso. Hai la possibilità di richiedere lezioni private se vuoi imparare più velocemente, oppure se preferisci stare in compagnia, puoi condividere la tua esperienza con il gruppo che ti viene assegnato.</p> 
+            <p>Il gruppo dei principianti è composto da 3/8 persone, quello intermedio da 4/10 persone, mentre quello degli esperti da 4/15 persone.</p> 
+            <p>Offriamo corsi di sci e <span lang="en">snowboard</span> per qualsiasi età. Affrettati a prenotare la tua lezione di prova!</p><p>Numero di telefono: 3330000005</p>
+        </div>
+    </main>
+    {{footer}}
+</body>
+</html>
+
+
+
+
+
+
+

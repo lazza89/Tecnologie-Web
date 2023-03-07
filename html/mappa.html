@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Mappa impianti - Crystal Ski</title>
+	<meta name="keywords" content="Mappa, impianti, piste, piste nere, piste rosse, piste blu, servizi, Crystal Ski"/>
+	<meta name="description" content="Mappa dei 20 chilometri di piste per tutte le difficoltà e non mancano i punti ristoro dove concedersi una pausa relax" />
+	<meta name="author" content="Crystal Ski" />
+	<link rel="stylesheet" href="../css/style.css" />
+	<link rel="stylesheet" media="screen and (max-width:600px), only screen and (max-width:600px)" href="../css/mini.css"/>
+    <link rel="shortcut icon" href="../images/icona.png" />
+    <link rel="stylesheet" media="print" href="../css/print.css"/>
+</head>
+
+<body>
+    <header>
+		<a class="visually-hidden" href="#main">Vai al contenuto</a>
+		<h1 lang="en">Crystal Ski</h1>
+	</header>
+
+	<div id="breadcrumb">
+        <p>{{logged}}Ti trovi in: <a href="home.php" lang="en">Home</a> &gt; &gt; Mappa</p>
+        <a class="areaRiservata" href="{{loginPage}}">{{login}}</a>
+	</div>
+
+    <input type="checkbox" id="menu-hamburger" class="menu-toggle" />
+	<label for="menu-hamburger" class="hamburger"><span class="visually-hidden">menu</span></label>
+	<nav id="menu">
+		<ul>
+			<li lang="en"><a href="home.php">Home</a></li>
+            <li><a href="tariffe.php">Tariffe</a></li>
+            <li>Mappa</li>         
+            <li><a href="servizi.php">Servizi</a></li>
+            <li><a href="eventi.php">Eventi e Gare</a></li>
+            <li><a href="recensioni.php">Recensioni</a></li>
+            {{areaPersonale}}
+		</ul>
+	</nav>
+
+	<main id="main">
+        <h2 class="titolo">Mappa e piste</h2>
+        <img id="imgMappa" src="../images/mappa-piste.png" alt=""/>
+        <a id="mappa-pdf" href="../images/mappa-piste.png" target="_blank" rel="noopener noreferrer" download>Clicca qui per scaricare la mappa [981 KB]</a>
+        <article id="legenda">
+            <div id="inner-box-left">
+            <table class="slope-table" id="blue-table" title="Informazioni sulle due piste blu di facile livello">
+                    <caption>Piste Blu (facile)</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Numero Pista</th> 
+                            <th scope="col">Lunghezza (<abbr title="metri">m</abbr>)</th> 
+                            <th scope="col">Dislivello (<abbr title="metri">m</abbr>)</th> 
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>3000</td>
+                            <td>330</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>2750</td>
+                            <td>355</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <table class="slope-table" id="red-table" title="Informazioni sulle quattro piste rosse di medio livello">
+                    <caption>Piste Rosse (media)</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Numero Pista</th> 
+                            <th scope="col">Lunghezza (<abbr title="metri">m</abbr>)</th> 
+                            <th scope="col">Dislivello (<abbr title="metri">m</abbr>)</th> 
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1 bis</th>
+                            <td>1050</td>
+                            <td>190</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>1350</td>
+                            <td>105</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2 bis</th>
+                            <td>1500</td>
+                            <td>285</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>4550</td>
+                            <td>809</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <table class="slope-table black-table" title="Informazioni sulle due piste nere di difficile livello">
+                    <caption>Piste Nere (difficile)</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Numero Pista</th> 
+                            <th scope="col">Lunghezza (<abbr title="metri">m</abbr>)</th> 
+                            <th scope="col">Dislivello (<abbr title="metri">m</abbr>)</th> 
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>1980</td>
+                            <td>435</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>1400</td>
+                            <td>400</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <table class="black-table" id="biglietterie" title="Dettaglio posizione biglietterie e parcheggi">
+                    <caption>Biglietterie e Parcheggi</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Tipo</th> 
+                            <th scope="col">Icona</th> 
+                            <th scope="col">Posizione</th> 
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Biglietterie</th>
+                            <td class="icone"><img src="../images/icona-biglietteria.png" alt=""></td>
+                            <td rowspan="2" id="posizione-parcheggi">Ai piedi dell'impianto A, C, E</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Parcheggi</th>
+                            <td class="icone"><img src="../images/icona-parcheggio.png" alt=""></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div id="inner-box-right">
+                <table id="risalita" class="black-table" title="Dettagli dei 5 impianti">
+                    <caption>Impianti di risalita</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Nome</th> 
+                            <th scope="col">Icona</th> 
+                            <th scope="col">Tipologia</th> 
+                            <th scope="col">Percorrenza</th> 
+                            <th scope="col">Collegamenti</th> 
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">A</th>
+                            <td class="icone" data-title="Icona"><img src="../images/icona-seggiovia.png" alt=""></td>
+                            <td data-title="Tipologia" >Seggiovia</td>
+                            <td data-title="Percorrenza">7'33''</td>
+                            <td data-title="Collegamenti">1, 1bis</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">B</th>
+                            <td class="icone" data-title="Icona"><img src="../images/icona-seggiovia.png" alt=""></td>
+                            <td data-title="Impianto">Seggiovia</td>
+                            <td data-title="Percorrenza">5'30''</td>
+                            <td data-title="Collegamenti"> 2, 2bis </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">C</th>
+                            <td class="icone"  data-title="Icona"><img src="../images/icona-cabinovia.png" alt=""></td>
+                            <td data-title="Impianto">Cabinovia</td>
+                            <td data-title="Percorrenza">6'29''</td>
+                            <td data-title="Collegamenti">3</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">D</th>
+                            <td class="icone"  data-title="Icona"><img src="../images/icona-tappeto.png" alt=""></td>
+                            <td data-title="Impianto">Tappeto</td>
+                            <td data-title="Percorrenza">3'55''</td>
+                            <td data-title="Collegamenti">5</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">E</th>
+                            <td class="icone"  data-title="Icona"><img src="../images/icona-cabinovia.png" alt=""></td>
+                            <td data-title="Impianto">Cabinovia</td>
+                            <td data-title="Percorrenza">11'05''</td>
+                            <td data-title="Collegamenti">4, 6</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="black-table" id="servizi" title="Dettaglio posizione dei 3punti ristoro, del noleggio e della scuola di sci">
+                    <caption>Servizi</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Icona</th>
+                            <th scope="col">Posizione</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">360 gradi</th>
+                            <td class="icone" data-title="Icona"><img src="../images/icona-rifugio.png" alt=""></td>
+                            <td data-title="Posizione">Cima Monte Cristallo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Camposcuola</th>
+                            <td class="icone" data-title="Icona"><img src="../images/icona-rifugio.png" alt=""></td>
+                            <td data-title="Posizione">Ai piedi dell'impianto C</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Bar Fast & Go</th>
+                            <td class="icone" data-title="Icona"><img src="../images/icona-rifugio.png" alt=""></td>
+                            <td data-title="Posizione">Ai piedi dell'impianto A</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Noleggio</th>
+                            <td class="icone" data-title="Icona"><img src="../images/icona-noleggio.png" alt=""></td>
+                            <td data-title="Posizione">Ai piedi dell'impianto C</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Scuola Sci</th>
+                            <td class="icone" data-title="Icona"><img src="../images/icona-skischool.png" alt=""></td>
+                            <td data-title="Posizione">Ai piedi della pista 5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+    </main>
+    {{footer}}		
+</body>
+</html>

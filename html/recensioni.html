@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Recensioni - Crystal Ski</title>
+	<meta name="keywords" content="Recensioni, commento, Crystal Ski, monte Cristallo" />
+	<meta name="description" content="Recensioni degli utenti sul comprensorio sciistico Crystal Ski: registrati e potrai scriverne una anche tu." />
+	<meta name="author" content="Crystal Ski" />
+	<link rel="stylesheet" href="../css/style.css" />
+	<link rel="stylesheet" media="screen and (max-width:600px), only screen and (max-width:600px)" href="../css/mini.css"/>
+	<link rel="shortcut icon" href="../images/icona.png" />
+	<link rel="stylesheet" media="print" href="../css/print.css"/>
+
+	<script src="../javascript/script.js"></script>
+
+</head>
+
+<body>
+	<header>
+		<a class="visually-hidden" href="#main">Vai al contenuto</a>
+		<h1 lang="en">Crystal Ski</h1>
+	</header>
+
+	<div id="breadcrumb">
+		<p>{{logged}}Ti trovi in: <a href="home.php" lang="en">Home</a> &gt; &gt; Recensioni</p>
+		<a class="areaRiservata" href="{{loginPage}}">{{login}}</a>
+	</div>
+
+    <input type="checkbox" id="menu-hamburger" class="menu-toggle" />
+	<label for="menu-hamburger" class="hamburger"><span class="visually-hidden">menu</span></label>
+	<nav id="menu">
+		<ul>
+			<li><a href="home.php">Home</a></li>
+			<li><a href="tariffe.php">Tariffe</a></li>
+			<li><a href="mappa.php">Mappa</a></li>			
+			<li><a href="servizi.php">Servizi</a></li>
+			<li><a href="eventi.php">Eventi e Gare</a></li>
+			<li>Recensioni</li>
+			{{areaPersonale}}
+		</ul>
+	</nav>
+
+	<main id="main">
+		<h2 class="titolo">Cosa pensano di noi</h2>
+
+		<h3 class="warning">Effettua il login per scrivere un commento</h3>
+
+		<div id=writeACommentHidden>
+			<form action="recensioni.php" id="commentForm" method="post">
+
+				{{errorMSG}}
+				<p class="JSError"  id="commentERR"></p>
+				<label for="starsQuantity">Stelle (da 1 a 5):</label>
+				<input type="number" id="starsQuantity" name="starsQuantity" value="1" min="1" max="5">
+				<label for="commentBox" class="visually-hidden">Commento</label>
+				<textarea name="commentBox" id="commentBox" placeholder="Scrivi qui il tuo commento..."></textarea>
+
+				<button type="submit" name="submit" class="submitComment">Pubblica</button>
+			</form>
+		</div>
+
+		<div id="comments_holder">
+			{{connectionERR}}
+			{{comments}}
+
+		</div>
+	</main> 
+	{{footer}}
+</body>
+</html>

@@ -1,0 +1,122 @@
+*{
+	background-color: #fff;
+}
+
+html, body{
+	font-size: 12pt;
+	font-family: "Times New Roman", serif;
+	margin: auto;
+}
+
+body{
+	border: none;
+}
+
+header{
+	background-image: none;
+}
+
+header h1{
+	font-size: 3em;
+	color: #000;
+}
+
+#breadcrumb{
+	border: none;
+}
+
+.areaRiservata{
+	display: none;
+}
+
+#menu, #menu-hamburger, .hamburger{
+	display: none;
+}
+
+/* HOME */
+#offerte, #news{
+	box-shadow: none;
+}
+
+/* TARIFFE, MAPPA */
+#mappa-pdf{
+	display: none;
+}
+
+#legenda{
+	display: block;
+}
+
+#listino, .slope-table, .black-table{
+	background-color: #fff;
+	page-break-inside: avoid;
+}
+
+#listino thead, .table-header{
+	background-color: #fff;
+}
+
+#blue-table caption {
+	background-color: #fff;
+	color: #005ab5;
+}
+
+#red-table caption {
+	background-color: #fff;
+	color: #dc3220;
+}
+
+.black-table caption {
+	background-color: #fff;
+	color: #000;
+}
+
+#listino tbody tr:nth-child(odd), #risalita tbody tr:nth-child(odd), #servizi tbody tr:nth-child(odd){
+	background: none;
+}
+
+/*SERVIZI,  EVENTI*/
+.box{
+	box-shadow: none;
+	border: none;
+}
+
+#gare{
+	page-break-before: always;
+}
+
+
+/*RECENSIONI, PROFILO LOGIN, REGISTRATI*/
+#writeAComment, .warning, .commentsHeader, #loginAndRegister, .registerbtn, .personalAreabtn{
+	display: none;
+}
+
+.comments{
+	box-shadow: none;
+}
+
+#loginBox, #registerBox, #personalAreaBox{
+	border: none;
+	box-shadow: none;
+}
+
+#REmail, #RUsername, #RName, #RSurname, #RCity, #RPassword, #RPasswordRepeat,
+#PEmail, #PUsername, #PName, #PSurname, #PCity, #PPassword, #POldPassword, #PRPassword{
+	background-color: #fff;
+}
+
+input[type=text]:focus, input[type=password]:focus{
+  background-color: #fff;
+}
+
+
+/* FOOTER */
+footer{
+	background-image: none;
+	background-color: #fff;
+}
+
+footer .imgValidCode{
+	width: 10%;
+	background-color: #fff;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Registrati - Crystal Ski</title>
+	<meta name="keywords" content="Registrazione, Crystal Ski, monte Cristallo" />
+	<meta name="description" content="Form per la registrazione di nuovi utenti" />
+	<meta name="author" content="Crystal Ski" />
+	<link rel="stylesheet" href="../css/style.css" />
+	<link rel="stylesheet" media="screen and (max-width:600px), only screen and (max-width:600px)" href="../css/mini.css"/>
+	<link rel="stylesheet" media="print" href="../css/print.css"/>
+	<link rel="shortcut icon" href="../images/icona.png" />
+	<script src="../javascript/script.js"></script>
+
+</head>
+
+<body>
+	<header>
+		<a class="visually-hidden" href="#main">Vai al contenuto</a>
+		<h1 lang="en">Crystal Ski</h1>
+	</header>
+
+	<div id="breadcrumb">
+		<p>Ti trovi in: <a href="home.php" lang="en">Home</a> &gt; &gt; Registrati</p>
+		<a class="areaRiservata" href="login.php">Login</a>
+	</div>
+
+    <input type="checkbox" id="menu-hamburger" class="menu-toggle" />
+	<label for="menu-hamburger" class="hamburger"><span class="visually-hidden">menu</span></label>
+	<nav id="menu">
+		<ul>
+			<li><a href="home.php">Home</a></li>
+			<li><a href="tariffe.php">Tariffe</a></li>
+			<li><a href="mappa.php">Mappa</a></li>			
+			<li><a href="servizi.php">Servizi</a></li>
+			<li><a href="eventi.php">Eventi e Gare</a></li>
+			<li><a href="recensioni.php">Recensioni</a></li>
+		</ul>
+	</nav>
+
+	<main id="main">
+		<div id="register">
+
+			<div id="registerDoneHidden">
+				<h2>Registrazione effettuata!</h2>
+				<h2>Vai alla pagina <a href="login.php">Login</a> per accedere</h2>
+			</div>
+
+			<div id="registerBox">
+				<form action="registrati.php" id="registerForm" method="post">
+					<h2 id="registrati">Registrati</h2>
+									
+					{{errorMSG}}
+
+					<p class="JSError" id="registerEmailERR"></p>
+					<label for="REmail"><b>Email</b></label>
+					<input type="text" placeholder="Inserisci E-mail" name="REmail" id="REmail" value="{{mail}}" required>
+				
+					<p class="JSError" id="registerUsernameERR"></p>
+					<label for="RUsername"><b>Username</b></label>
+					<input type="text" placeholder="Inserisci Username" name="RUsername" id="RUsername" value="{{username}}" required>
+
+					<p class="JSError" id="registerNameERR"></p>
+					<label for="RName"><b>Nome</b></label>
+					<input type="text" placeholder="Inserisci Nome" name="RName" id="RName" value="{{name}}" required>
+
+					<p class="JSError" id="registerSurnameERR"></p>
+					<label for="RSurname"><b>Cognome</b></label>
+					<input type="text" placeholder="Inserisci Cognome" name="RSurname" id="RSurname" value="{{surname}}" required>
+
+					<p class="JSError" id="registerCityERR"></p>
+					<label for="RCity"><b>Città</b></label>
+					<input type="text" placeholder="Inserisci città" name="RCity" id="RCity" value="{{city}}">
+
+					<p class="JSError" id="registerPasswordERR"></p>
+					<label for="RPassword"><b>Password</b></label>
+					<input type="password" placeholder="Inserisci Password" name="RPassword" id="RPassword" required>
+				
+					<p class="JSError" id="registerRPasswordERR"></p>
+					<label for="RPasswordRepeat"><b>Ripeti Password</b></label>
+					<input type="password" placeholder="Ripeti Password" name="RPasswordRepeat" id="RPasswordRepeat" required>
+				
+					<button type="submit" name="submit" class="registerbtn">Registrati</button>
+				</form>
+			</div>
+		</div>
+	</main>
+    {{footer}}		
+</body>
+</html>
